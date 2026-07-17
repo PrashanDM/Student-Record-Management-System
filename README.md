@@ -4,15 +4,18 @@ A robust, modular command-line application built in C to manage student academic
 
 
 
-📋 Project OverviewThis system acts as an administrative portal designed to replace static, fixed-size data storage with dynamic memory allocation. By implementing custom data structures, the software ensures scalable performance, fair processing of admissions, and reliable data recovery.  
+📋 Project Overview
+This system acts as an administrative portal designed to replace static, fixed-size data storage with dynamic memory allocation. By implementing custom data structures, the software ensures scalable performance, fair processing of admissions, and reliable data recovery.  
 
 
 
-🚀 FeaturesAdmissions Queue: Implements a FIFO (First-In, First-Out) structure to process registration applications in the exact order they arrive.  Active Master Database: Utilizes a Singly Linked List to store active student records, allowing for dynamic growth without memory fragmentation.  Zero-Overhead Undo Engine: Features a LIFO (Last-In, First-Out) Stack to intercept deleted nodes, allowing for instant, non-destructive data restoration.  Data Persistence: Automatically serializes and deserializes records to a flat file (students.txt), ensuring data durability across program sessions. 
+🚀 Features
+Admissions Queue: Implements a FIFO (First-In, First-Out) structure to process registration applications in the exact order they arrive.  Active Master Database: Utilizes a Singly Linked List to store active student records, allowing for dynamic growth without memory fragmentation.  Zero-Overhead Undo Engine: Features a LIFO (Last-In, First-Out) Stack to intercept deleted nodes, allowing for instant, non-destructive data restoration.  Data Persistence: Automatically serializes and deserializes records to a flat file (students.txt), ensuring data durability across program sessions. 
 
 &#x20;
 
-📁 Project StructureThe project follows a modular file architecture to decouple logic and improve maintainability:student.h: Defines the unified struct Student and function interfaces.  linked\_list.c: Manages active database traversal and record manipulation.  queue.c: Controls the FIFO incoming registration pipeline.  stack.c: Implements the LIFO history stack for the Undo function.  file\_handler.c: Handles disk serialization and data persistence.  main.c: Drives the interactive dashboard menu and user input validation.  
+📁 Project Structure
+The project follows a modular file architecture to decouple logic and improve maintainability:student.h: Defines the unified struct Student and function interfaces.  linked\_list.c: Manages active database traversal and record manipulation.  queue.c: Controls the FIFO incoming registration pipeline.  stack.c: Implements the LIFO history stack for the Undo function.  file\_handler.c: Handles disk serialization and data persistence.  main.c: Drives the interactive dashboard menu and user input validation.  
 
 
 
