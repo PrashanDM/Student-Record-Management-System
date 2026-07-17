@@ -20,7 +20,7 @@ A robust, modular command-line application built in C to manage student academic
 
 Clone the repository
 
-git clone https://github.com/YOUR\_USERNAME/YOUR\_REPOSITORY\_NAME.git
+git clone https://github.com/PrashanDM/Student-Record-Management-System.git
 
 
 
